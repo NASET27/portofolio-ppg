@@ -1,3 +1,34 @@
+/* Sakelar tema terang/gelap, preferensi disimpan di browser */
+(() => {
+  const root = document.documentElement;
+  let savedTheme = "light";
+  try { savedTheme = localStorage.getItem("ppg-portfolio-theme") || "light"; } catch {}
+  if (savedTheme !== "dark" && savedTheme !== "light") savedTheme = "light";
+  root.dataset.theme = savedTheme;
+
+  const navWrap = document.querySelector(".nav-wrap");
+  const nav = document.getElementById("mainNav");
+  if (!navWrap || !nav) return;
+
+  const toggle = document.createElement("button");
+  toggle.type = "button";
+  toggle.className = "theme-toggle";
+  toggle.id = "themeToggle";
+  toggle.setAttribute("aria-pressed", String(savedTheme === "dark"));
+  toggle.setAttribute("aria-label", savedTheme === "dark" ? "Aktifkan mode terang" : "Aktifkan mode gelap");
+  toggle.innerHTML = savedTheme === "dark" ? "☀ <span>Mode terang</span>" : "☾ <span>Mode gelap</span>";
+  nav.insertAdjacentElement("afterend", toggle);
+
+  toggle.addEventListener("click", () => {
+    const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+    root.dataset.theme = nextTheme;
+    toggle.setAttribute("aria-pressed", String(nextTheme === "dark"));
+    toggle.setAttribute("aria-label", nextTheme === "dark" ? "Aktifkan mode terang" : "Aktifkan mode gelap");
+    toggle.innerHTML = nextTheme === "dark" ? "☀ <span>Mode terang</span>" : "☾ <span>Mode gelap</span>";
+    try { localStorage.setItem("ppg-portfolio-theme", nextTheme); } catch {}
+  });
+})();
+
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 

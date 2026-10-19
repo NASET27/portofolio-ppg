@@ -365,3 +365,15 @@ html[data-theme="dark"] .theme-toggle { background: rgba(255,255,255,.12); }
   .nav-wrap { position: relative; padding-right: 0; }
   .site-header .main-nav.open { padding-top: 8px; }
 }
+
+
+html[data-theme="dark"] .reflection-section { background: #101b2d; }
+html[data-theme="dark"] .next-card { background: var(--surface); border-color: var(--border-color); }
+html[data-theme="dark"] .next-card h2 { color: var(--heading-color); }
+html[data-theme="dark"] .pills span { color: #c1d0e5; background: #22324a; }
+html[data-theme="dark"] .content-note { color: #e8d7a6; background: #2b261a; }
+html[data-theme="dark"] .skip-link { color: #102d55; }
+@media (max-width: 760px) {
+  .theme-toggle { z-index: 2; }
+  .nav-wrap { padding-right: 0; }
+}

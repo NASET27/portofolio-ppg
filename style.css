@@ -212,3 +212,25 @@ h1, h2, h3 { font-family: Manrope, "DM Sans", sans-serif; line-height: 1.18; let
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+
+/* Halaman detail portofolio */
+.detail-hero { color: white; background: linear-gradient(115deg, #0b2f68 0%, #103f82 65%, #18519a 100%); padding: 72px 0 76px; }
+.detail-hero h1 { font-size: clamp(2.3rem, 5vw, 3.7rem); margin: 0 0 18px; }
+.detail-hero p:not(.section-label) { max-width: 760px; color: #e0eafb; font-size: 1.03rem; line-height: 1.85; margin-bottom: 0; }
+.detail-section { padding-top: 56px; }
+.detail-list { display: grid; gap: 18px; }
+.detail-card { display: grid; grid-template-columns: 54px 1fr; gap: 20px; padding: 28px; border: 1px solid var(--line); border-radius: 18px; background: white; box-shadow: 0 8px 28px rgba(20,45,82,.04); }
+.detail-index { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: #fff1c9; color: #765000; font-family: Manrope,sans-serif; font-weight: 800; }
+.detail-card h2 { font-size: 1.3rem; margin: 4px 0 13px; }
+.detail-card p { color: var(--muted); margin: 0 0 9px; line-height: 1.8; }
+.detail-card p:last-child { margin-bottom: 0; }
+.page-navigation { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.page-navigation .outline-light { color: var(--navy); border-color: #c9d6e8; background: white; }
+.page-navigation .outline-light:hover { background: #eef4fc; }
+@media (max-width: 760px) {
+  .detail-hero { padding: 52px 0 56px; }
+  .detail-card { grid-template-columns: 1fr; padding: 22px; gap: 12px; }
+  .page-navigation { align-items: stretch; flex-direction: column; }
+  .page-navigation .button { width: 100%; }
+}

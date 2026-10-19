@@ -57,13 +57,17 @@
         <div class="hero-visual">
           <div class="photo-frame">
             <div class="photo-placeholder">
-              <div class="avatar-symbol" aria-hidden="true">
-                <svg viewBox="0 0 120 120" role="img" aria-label="Ilustrasi placeholder foto profil">
-                  <circle cx="60" cy="38" r="22" fill="currentColor" opacity=".82"/>
-                  <path d="M20 108c2-25 17-39 40-39s38 14 40 39" fill="currentColor" opacity=".82"/>
-                </svg>
+              <img class="profile-photo" src="assets/foto-profil.jpg" alt="Foto profil Nofu Afi Surya Ekatama" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+              <div class="photo-fallback">
+                <div class="avatar-symbol" aria-hidden="true">
+                  <svg viewBox="0 0 120 120" role="img" aria-label="Ilustrasi sementara foto profil">
+                    <circle cx="60" cy="38" r="22" fill="currentColor" opacity=".82"/>
+                    <path d="M20 108c2-25 17-39 40-39s38 14 40 39" fill="currentColor" opacity=".82"/>
+                  </svg>
+                </div>
+                <strong>Foto Profil</strong>
+                <span>Unggah foto ke folder assets dengan nama foto-profil.jpg</span>
               </div>
-              <strong></strong>
             </div>
             <span class="frame-label">CALON GURU INFORMATIKA</span>
           </div>

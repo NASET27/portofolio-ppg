@@ -1,3 +1,13 @@
+/* Bersihkan sisa draf/berkas lokal dari versi editor lama. */
+try {
+  for (let i = localStorage.length - 1; i >= 0; i--) {
+    const key = localStorage.key(i);
+    if (key && (key.startsWith("ppg-portfolio-draft:") || key.startsWith("ppg-portfolio-files:"))) {
+      localStorage.removeItem(key);
+    }
+  }
+} catch {}
+
 /* Sakelar tema terang/gelap, preferensi disimpan di browser */
 (() => {
   const root = document.documentElement;

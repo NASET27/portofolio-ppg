@@ -78,3 +78,30 @@ if ("IntersectionObserver" in window && sections.length && navLinks.length) {
 
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
+
+
+/* Tombol penyuntingan: membuka berkas halaman aktif di editor GitHub.
+   Perubahan hanya dapat disimpan oleh akun yang memiliki izin repository. */
+(() => {
+  const allowedPages = new Set([
+    "index.html",
+    "profil.html",
+    "perangkat-ajar.html",
+    "lk3.html",
+    "uts-siklus-1.html",
+    "uas-siklus-2-4.html",
+    "lampiran.html"
+  ]);
+  const currentFile = window.location.pathname.split("/").filter(Boolean).pop() || "index.html";
+  const pageFile = allowedPages.has(currentFile) ? currentFile : "index.html";
+
+  const editLink = document.createElement("a");
+  editLink.className = "portfolio-edit-link";
+  editLink.href = "https://github.com/NASET27/portofolio-ppg/edit/main/" + encodeURIComponent(pageFile);
+  editLink.target = "_blank";
+  editLink.rel = "noopener noreferrer";
+  editLink.innerHTML = '<span aria-hidden="true">✎</span><span>Edit halaman ini</span>';
+  editLink.setAttribute("aria-label", "Edit halaman ini di GitHub: " + pageFile);
+  editLink.title = "Buka editor GitHub untuk " + pageFile;
+  document.body.appendChild(editLink);
+})();

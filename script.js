@@ -63,7 +63,7 @@ if (menuToggle && mainNav) {
 const sections = document.querySelectorAll("main section[id]");
 const navLinks = document.querySelectorAll(".main-nav a");
 
-if ("IntersectionObserver" in window && sections.length && navLinks.length) {
+if ("IntersectionObserver" in window && sections.length && navLinks.length && Array.from(navLinks).some(link => link.getAttribute("href")?.startsWith("#"))) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
@@ -104,4 +104,14 @@ if (year) year.textContent = new Date().getFullYear();
   editLink.setAttribute("aria-label", "Edit halaman ini di GitHub: " + pageFile);
   editLink.title = "Buka editor GitHub untuk " + pageFile;
   document.body.appendChild(editLink);
+
+  const uploadLink = document.createElement("a");
+  uploadLink.className = "portfolio-upload-link";
+  uploadLink.href = "https://github.com/NASET27/portofolio-ppg/upload/main/assets";
+  uploadLink.target = "_blank";
+  uploadLink.rel = "noopener noreferrer";
+  uploadLink.innerHTML = '<span aria-hidden="true">＋</span><span>Unggah media</span>';
+  uploadLink.setAttribute("aria-label", "Unggah foto atau berkas ke folder assets di GitHub");
+  uploadLink.title = "Unggah foto, gambar, atau berkas ke folder assets";
+  document.body.appendChild(uploadLink);
 })();

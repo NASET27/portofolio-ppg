@@ -423,3 +423,50 @@ html[data-theme="dark"] .portfolio-edit-link { color: #102d55; background: #ffca
 @media (max-width: 520px) {
   .portfolio-edit-link { right: 12px; bottom: 12px; min-height: 44px; padding: 10px 13px; font-size: .78rem; }
 }
+
+
+/* Tombol cepat untuk mengatur halaman dan mengunggah media satu per satu */
+.portfolio-upload-link {
+  position: fixed;
+  right: 22px;
+  bottom: 82px;
+  z-index: 120;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  padding: 11px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--navy);
+  background: var(--white);
+  box-shadow: 0 8px 24px rgba(8,39,84,.14);
+  font: 800 .82rem "DM Sans", sans-serif;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.portfolio-upload-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(8,39,84,.2);
+}
+.portfolio-upload-link:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+.portfolio-upload-link span:first-child { font-size: 1.2rem; line-height: 1; }
+html[data-theme="dark"] .portfolio-upload-link {
+  color: #edf4ff;
+  background: #17263c;
+  border-color: #34445d;
+}
+@media (max-width: 520px) {
+  .portfolio-upload-link {
+    right: 12px;
+    bottom: 66px;
+    min-height: 42px;
+    padding: 9px 12px;
+    font-size: .76rem;
+  }
+  .portfolio-edit-link { bottom: 12px; }
+}

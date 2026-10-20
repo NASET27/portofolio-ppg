@@ -470,3 +470,92 @@ html[data-theme="dark"] .portfolio-upload-link {
   }
   .portfolio-edit-link { bottom: 12px; }
 }
+
+
+/* Penyesuaian tipografi E-Portofolio: nyaman dibaca dan konsisten di semua halaman */
+html { font-size: 16px; }
+body {
+  font-size: 1rem;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+}
+.container { max-width: 1160px; }
+.main-nav a { font-size: .82rem; }
+.brand-text strong { font-size: .9rem; }
+.brand-text small { font-size: .74rem; }
+.hero h1 { font-size: clamp(2.35rem, 4.2vw, 3.8rem); line-height: 1.12; }
+.hero-copy h2 { font-size: clamp(1.1rem, 1.7vw, 1.3rem); line-height: 1.35; }
+.intro { font-size: 1rem; line-height: 1.8; }
+.overline, .section-label { font-size: .76rem; line-height: 1.5; }
+.eyebrows span { font-size: .78rem; }
+.button { font-size: .9rem; }
+.hero-note, .hero-bottom { font-size: .8rem; }
+.welcome-copy { font-size: .96rem; line-height: 1.8; }
+.section-description { font-size: .94rem; line-height: 1.75; }
+.journey-card h3 { font-size: 1.12rem; line-height: 1.35; }
+.journey-card p:not(.card-tag) { font-size: .9rem; line-height: 1.75; }
+.card-tag, .work-category { font-size: .7rem; }
+.card-link, .text-link { font-size: .84rem; }
+.practice-copy > p:not(.section-label) { font-size: .96rem; line-height: 1.8; }
+.practice-points strong { font-size: .94rem; }
+.practice-points small { font-size: .84rem; line-height: 1.65; }
+.panel-content h3 { font-size: 1.45rem; }
+.panel-content p { font-size: .94rem; line-height: 1.8; }
+.work-content h3 { font-size: 1.15rem; line-height: 1.4; }
+.work-content p { font-size: .93rem; line-height: 1.8; }
+.pills span { font-size: .73rem; }
+.content-note { font-size: .86rem; line-height: 1.7; }
+.reflection-text { font-size: .96rem; line-height: 1.85; }
+.reflection-signature { font-size: .88rem; }
+.next-card p:not(.section-label) { font-size: .93rem; line-height: 1.8; }
+.footer-inner > p { font-size: .82rem; line-height: 1.7; }
+.back-top { font-size: .82rem; }
+.copyright { font-size: .76rem; line-height: 1.6; }
+
+/* Halaman Profil, Perangkat Ajar, LK-3, UTS, UAS, dan Lampiran */
+.detail-hero h1 { font-size: clamp(2.1rem, 4vw, 3.25rem); line-height: 1.15; }
+.detail-hero p:not(.section-label) { font-size: 1rem; line-height: 1.85; }
+.detail-card h2 { font-size: 1.22rem; line-height: 1.4; }
+.detail-card p { font-size: .96rem; line-height: 1.8; }
+.page-navigation .button { font-size: .9rem; }
+.portfolio-edit-link, .portfolio-upload-link { font-size: .86rem; }
+.theme-toggle { font-size: .8rem; }
+
+@media (max-width: 1080px) {
+  .main-nav a { font-size: .78rem; padding: 9px 8px; }
+}
+@media (max-width: 800px) {
+  body { font-size: .96rem; }
+  .main-nav a { font-size: .9rem; }
+  .hero h1 { font-size: clamp(2.25rem, 7vw, 3.25rem); }
+  .intro, .welcome-copy, .practice-copy > p:not(.section-label),
+  .work-content p, .detail-card p, .detail-hero p:not(.section-label) {
+    font-size: .96rem;
+  }
+}
+@media (max-width: 520px) {
+  html { font-size: 15px; }
+  body { font-size: 1rem; line-height: 1.75; }
+  .brand-text strong { font-size: .78rem; }
+  .brand-text small { font-size: .68rem; }
+  .hero h1 { font-size: clamp(2.15rem, 9vw, 2.8rem); line-height: 1.14; }
+  .hero-copy h2 { font-size: 1.08rem; }
+  .intro { font-size: .96rem; line-height: 1.8; }
+  .hero-note, .hero-bottom { font-size: .78rem; }
+  .welcome-heading h2 { font-size: 1.65rem; line-height: 1.25; }
+  .welcome-copy { font-size: .95rem; }
+  .section-heading h2, .next-card h2 { font-size: 1.75rem; line-height: 1.25; }
+  .section-description { font-size: .92rem; }
+  .journey-card h3, .work-content h3 { font-size: 1.08rem; }
+  .journey-card p:not(.card-tag), .work-content p,
+  .practice-copy > p:not(.section-label), .panel-content p,
+  .reflection-text, .next-card p:not(.section-label), .detail-card p {
+    font-size: .93rem;
+    line-height: 1.8;
+  }
+  .detail-hero h1 { font-size: clamp(1.9rem, 8vw, 2.5rem); }
+  .detail-hero p:not(.section-label) { font-size: .95rem; }
+  .detail-card h2 { font-size: 1.15rem; }
+  .portfolio-edit-link, .portfolio-upload-link { font-size: .8rem; }
+  .copyright { font-size: .74rem; }
+}

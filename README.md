@@ -58,3 +58,22 @@ Repository ini menggunakan berkas statis. Jika konfigurasi Pages belum aktif, bu
 ## Catatan sebelum pengumpulan PPG
 
 Konten awal pada beberapa bagian masih berupa kerangka. Ganti dengan artefak asli yang sudah diperiksa, refleksi berdasarkan pengalaman nyata, dan bukti yang sesuai dengan rubrik. Pastikan setiap tautan dapat diakses oleh audiens yang dituju serta tidak mengungkap informasi sensitif.
+
+ 
+## Alur kerja yang disarankan: atur satu halaman setiap kali
+
+Di setiap halaman situs tersedia dua pintasan:
+- **Edit halaman ini** — membuka berkas HTML halaman yang sedang dibuka, sehingga Beranda dan setiap menu dapat diatur secara terpisah.
+- **Unggah media** — membuka halaman unggah GitHub untuk folder `assets/`. Setelah unggah, tautkan berkas tersebut dari halaman yang sesuai.
+
+### Menambahkan media satu per satu
+
+1. Unggah satu foto, PDF, atau media yang ingin dipublikasikan melalui tombol **Unggah media**.
+2. Setelah unggahan disimpan (*commit*), salin nama berkas persis seperti yang muncul di GitHub.
+3. Buka halaman tujuan dan pilih **Edit halaman ini**.
+4. Untuk foto, gunakan pola `<img src="assets/nama-foto.jpg" alt="Deskripsi foto">`. Untuk dokumen, gunakan pola `<a href="assets/nama-dokumen.pdf">Lihat dokumen</a>`.
+5. Simpan perubahan, lalu periksa halaman yang sudah terbit. Ulangi untuk media berikutnya.
+
+Saran penamaan: gunakan huruf kecil, tanpa spasi, dan deskripsi singkat, misalnya `foto-ppl-kelas-xii.jpg`, `lkpd-berpikir-komputasional.pdf`, atau `video-praktik-siklus-1.mp4`. Untuk video berukuran besar, lebih baik gunakan tautan ke platform video yang sesuai daripada menyimpan file besar di repository.
+
+**Penting:** tombol unggah memerlukan login GitHub dan izin menulis pada repository. GitHub Pages bersifat publik; semua file yang disimpan di repository publik dapat dilihat atau diunduh publik. Jangan mengunggah dokumen privat atau data pribadi siswa.

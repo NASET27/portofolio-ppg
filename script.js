@@ -78,3 +78,34 @@ if ("IntersectionObserver" in window && sections.length && navLinks.length && Ar
 
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
+
+
+/* Animasi muncul perlahan saat bagian halaman mulai terlihat */
+(() => {
+  const targets = document.querySelectorAll(
+    ".welcome-card, .section-heading, .journey-card, .practice-copy, .practice-panel, .work-item, .reflection-inner, .next-card, .detail-card"
+  );
+  if (!targets.length) return;
+
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion || !("IntersectionObserver" in window)) return;
+
+  targets.forEach((element, index) => {
+    element.classList.add("reveal-on-scroll");
+    if (element.matches(".journey-card, .work-item, .detail-card")) {
+      element.style.setProperty("--reveal-delay", `${(index % 4) * 70}ms`);
+    }
+  });
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -24px 0px" });
+
+  targets.forEach((element) => {
+    if (element.classList.contains("reveal-on-scroll")) revealObserver.observe(element);
+  });
+})();

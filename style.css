@@ -559,3 +559,88 @@ body {
   .portfolio-edit-link, .portfolio-upload-link { font-size: .8rem; }
   .copyright { font-size: .74rem; }
 }
+
+
+/* Penyegaran visual khusus halaman Profil Guru */
+.profile-page { background: var(--surface, #f7f9fc); }
+.profile-page .profile-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(58px, 8vw, 96px) 0 clamp(64px, 8vw, 92px);
+  background: radial-gradient(circle at 84% 20%, rgba(231,183,76,.25), transparent 25%),
+              radial-gradient(circle at 10% 100%, rgba(68,125,198,.3), transparent 34%),
+              linear-gradient(125deg, #08234e 0%, #0b2f68 52%, #174f8d 100%);
+}
+.profile-page .profile-hero::after {
+  content: "NA";
+  position: absolute;
+  right: max(3vw, calc((100vw - 1160px)/2));
+  bottom: -88px;
+  color: rgba(255,255,255,.055);
+  font: 900 clamp(10rem, 23vw, 19rem)/1 "Manrope", sans-serif;
+  letter-spacing: -.1em;
+  pointer-events: none;
+}
+.profile-page .profile-hero-inner { position: relative; z-index: 1; }
+.profile-page .profile-hero .section-label { color: #f4cd76; letter-spacing: .16em; }
+.profile-page .profile-hero h1 { max-width: 850px; font-size: clamp(2.5rem, 6vw, 4.6rem); letter-spacing: -.045em; line-height: 1.08; margin: 16px 0 22px; }
+.profile-page .profile-hero h1 span { color: #f2c969; }
+.profile-page .profile-hero-lead { max-width: 650px; font-size: 1.08rem; line-height: 1.85; color: #e4edfb; }
+.profile-page .profile-hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.profile-page .profile-hero-tags span { border: 1px solid rgba(255,255,255,.24); background: rgba(255,255,255,.08); color: #fff; border-radius: 999px; padding: 8px 14px; font-size: .82rem; }
+.profile-page .detail-section { padding-top: clamp(34px, 5vw, 62px); }
+.profile-page .detail-list { gap: 22px; }
+.profile-page .detail-card {
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 22px;
+  padding: clamp(22px, 4vw, 38px);
+  border: 1px solid #e1e8f2;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #fff 0%, #fbfcff 100%);
+  box-shadow: 0 12px 35px rgba(10,38,78,.055);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.profile-page .detail-card:hover { transform: translateY(-3px); box-shadow: 0 18px 42px rgba(10,38,78,.09); border-color: #d4b05a; }
+.profile-page .detail-index {
+  display: flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px; border-radius: 15px;
+  background: linear-gradient(145deg, #0b2f68, #1c5595);
+  color: #f5ce71; font-weight: 800; font-size: .95rem;
+  box-shadow: 0 7px 16px rgba(11,47,104,.2);
+}
+.profile-page .detail-card h2 { color: #102f5b; font-size: clamp(1.22rem, 2vw, 1.5rem); letter-spacing: -.02em; margin: 3px 0 18px; }
+.profile-page .detail-card h3 { color: #174477; font-size: 1rem; }
+.profile-page .detail-card p { color: #52627a; }
+.profile-page .detail-card strong { color: #193a67; }
+.profile-page .detail-card ul { color: #52627a !important; }
+.profile-page .detail-card li { padding-left: 3px; margin: 4px 0; }
+.profile-page .detail-card li::marker { color: #c99b32; }
+.profile-page .detail-card img { box-shadow: 0 12px 28px rgba(12,38,75,.15); border: 4px solid #fff !important; }
+.profile-page .content-note { border: 1px solid #ead9a8; border-left: 4px solid #d6ad49; border-radius: 14px; background: #fffaf0; color: #66542c; padding: 18px 20px; }
+.profile-page .page-navigation { padding-top: 8px; }
+.profile-page .page-navigation .button { border-radius: 12px; }
+html[data-theme="dark"] .profile-page { background: #0b1422; }
+html[data-theme="dark"] .profile-page .detail-card {
+  background: linear-gradient(145deg, #172438 0%, #111d2f 100%);
+  border-color: #2a3c55; box-shadow: 0 14px 36px rgba(0,0,0,.18);
+}
+html[data-theme="dark"] .profile-page .detail-card:hover { border-color: #a98535; }
+html[data-theme="dark"] .profile-page .detail-card h2 { color: #f1d58c; }
+html[data-theme="dark"] .profile-page .detail-card h3,
+html[data-theme="dark"] .profile-page .detail-card strong { color: #f2d995; }
+html[data-theme="dark"] .profile-page .detail-card p,
+html[data-theme="dark"] .profile-page .detail-card ul { color: #c3d0e2 !important; }
+html[data-theme="dark"] .profile-page .detail-card img { border-color: #25354b !important; }
+html[data-theme="dark"] .profile-page .content-note { background: #292416; border-color: #594a25; color: #ead9a6; }
+@media (max-width: 700px) {
+  .profile-page .detail-card { grid-template-columns: 1fr; gap: 14px; padding: 22px; border-radius: 18px; }
+  .profile-page .detail-index { width: 42px; height: 42px; border-radius: 13px; }
+  .profile-page .profile-hero { padding: 54px 0 62px; }
+  .profile-page .profile-hero-lead { font-size: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .profile-page .detail-card { transition: none; }
+  .profile-page .detail-card:hover { transform: none; }
+}

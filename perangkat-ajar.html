@@ -3,10 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Perangkat Ajar — E-Portfolio PPG Informatika Nofu Afi Surya Ekatama.">
+  <meta name="description" content="Perangkat pembelajaran Informatika kelas XII: modul ajar dan presentasi yang digunakan dalam praktik mengajar PPG.">
   <meta name="theme-color" content="#0b2f68">
-  <title>Perangkat Ajar | E-Portfolio PPG Informatika</title>
+  <title>Perangkat Pembelajaran | E-Portfolio PPG Informatika</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .resource-intro{max-width:780px;color:var(--muted);margin:0}
+    .resource-group{margin:0 0 38px}
+    .resource-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}
+    .resource-heading h2{font-size:clamp(1.45rem,2.5vw,2rem);margin:0;color:var(--navy)}
+    .resource-heading p{margin:0;color:var(--muted);font-size:.9rem}
+    .resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .resource-card{display:flex;flex-direction:column;gap:12px;min-width:0;padding:25px;border:1px solid var(--line);border-radius:19px;background:#fff;box-shadow:0 10px 28px rgba(10,38,78,.045);transition:transform .2s ease,box-shadow .2s ease}
+    .resource-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .resource-top{display:flex;align-items:center;gap:12px}
+    .resource-icon{display:grid;place-items:center;flex:0 0 46px;height:46px;border-radius:14px;background:#eaf1fc;color:#174b88;font-size:.78rem;font-weight:900;letter-spacing:.04em}
+    .resource-icon.gold{background:#fff3d3;color:#805c08}
+    .resource-kind{margin:0 0 3px;color:#718096;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .resource-card h3{margin:0;color:#17365f;font-size:1.08rem;line-height:1.4}
+    .resource-card>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.75}
+    .resource-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto;padding-top:6px}
+    .resource-actions .button{min-height:40px;padding:10px 13px;font-size:.82rem}
+    .resource-actions .button.secondary{border:1px solid var(--line);background:#f7f9fc;color:var(--navy)}
+    .resource-note{margin-top:24px;padding:17px 19px;border-left:4px solid var(--gold);border-radius:0 12px 12px 0;background:#fff9e9;color:#63532e;font-size:.88rem}
+    html[data-theme="dark"] .resource-card{background:var(--surface);border-color:var(--border-color)}
+    html[data-theme="dark"] .resource-heading h2,html[data-theme="dark"] .resource-card h3{color:var(--heading-color)}
+    html[data-theme="dark"] .resource-card>p,html[data-theme="dark"] .resource-heading p{color:var(--text-muted)}
+    html[data-theme="dark"] .resource-actions .button.secondary{background:#17253b;border-color:#3a4c66;color:#e7edf7}
+    html[data-theme="dark"] .resource-note{background:#292416;border-color:#a98535;color:#ead9a6}
+    @media(max-width:680px){.resource-grid{grid-template-columns:1fr}.resource-heading{align-items:flex-start;flex-direction:column}.resource-card{padding:21px}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#konten">Lewati ke konten</a>
@@ -16,43 +42,41 @@
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
     <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
-        <a href="index.html">Beranda</a>
-        <a href="profil.html">Profil Guru</a>
-        <a class="active" href="perangkat-ajar.html">Perangkat Ajar</a>
-        <a href="lk3.html">LK-3</a>
-        <a href="uts-siklus-1.html">UTS – Siklus 1</a>
-        <a href="uas-siklus-2-4.html">UAS – Siklus 2–4</a>
-        <a href="lampiran.html">Lampiran</a>
+      <a href="index.html">Beranda</a><a href="profil.html">Profil Guru</a><a class="active" href="perangkat-ajar.html">Perangkat Ajar</a><a href="lk3.html">LK-3</a><a href="uts-siklus-1.html">UTS – Siklus 1</a><a href="uas-siklus-2-4.html">UAS – Siklus 2–4</a><a href="lampiran.html">Lampiran</a>
     </nav>
   </div></header>
   <main id="konten">
     <section class="detail-hero"><div class="container">
-      <p class="section-label">PERENCANAAN PEMBELAJARAN</p><h1>Perangkat Ajar</h1><p>Kumpulan perangkat yang digunakan untuk merancang, melaksanakan, dan mengevaluasi pembelajaran Informatika.</p>
+      <p class="section-label">PERENCANAAN PEMBELAJARAN</p>
+      <h1>Perangkat Pembelajaran</h1>
+      <p class="resource-intro">Kumpulan modul ajar dan bahan presentasi Informatika kelas XII yang disiapkan untuk mendukung pembelajaran di SMA Negeri Colomadu. Berkas yang tersedia dapat dibuka atau diunduh langsung dari portofolio ini.</p>
     </div></section>
-    <section class="section detail-section"><div class="container detail-list">
-      <article class="detail-card">
-        <div class="detail-index">01</div>
-        <div><h2>Modul Ajar dan Alur Tujuan Pembelajaran</h2>
-        <p>Tambahkan modul ajar, ATP, tujuan pembelajaran, serta dokumen perencanaan yang sudah ditelaah.</p>
+    <section class="section detail-section"><div class="container">
+      <div class="resource-group">
+        <div class="resource-heading"><h2>Modul Ajar</h2><p>Dokumen perencanaan pembelajaran</p></div>
+        <div class="resource-grid">
+          <article class="resource-card"><div class="resource-top"><span class="resource-icon">DOCX</span><div><p class="resource-kind">Modul 1 · Sistem Komputer</p><h3>Sistem Komputer dan Simulasi Arduino</h3></div></div><p>Modul ajar untuk pembelajaran sistem komputer melalui simulasi Arduino, termasuk perancangan rangkaian dan pengujian program.</p><div class="resource-actions"><a class="button primary" href="assets/Modul%201%20Ajar%20Arduino_Nofu%20Afi%20Surya%20Ekatama.docx" download>Unduh modul ↗</a></div></article>
+          <article class="resource-card"><div class="resource-top"><span class="resource-icon">DOCX</span><div><p class="resource-kind">Modul 2 · Arduino</p><h3>Modul Ajar Arduino</h3></div></div><p>Dokumen modul ajar kedua untuk rangkaian pembelajaran berbasis Arduino.</p><div class="resource-actions"><a class="button primary" href="assets/Modul%202%20Ajar%20Arduino_Nofu%20Afi%20Surya%20Ekatama.docx" download>Unduh modul ↗</a></div></article>
+          <article class="resource-card"><div class="resource-top"><span class="resource-icon">DOCX</span><div><p class="resource-kind">Modul 3 · Berpikir Komputasional</p><h3>Berpikir Komputasional</h3></div></div><p>Modul pembelajaran untuk melatih peserta didik menguraikan masalah, mengenali pola, melakukan abstraksi, dan menyusun algoritma.</p><div class="resource-actions"><a class="button primary" href="assets/Modul%203%20Berpikir%20Komputasional_Nofu%20Afi%20Surya%20Ekatama.docx" download>Unduh modul ↗</a></div></article>
+          <article class="resource-card"><div class="resource-top"><span class="resource-icon">DOCX</span><div><p class="resource-kind">Modul 4 · Wawasan Informatika</p><h3>Informatika Sekarang dan Masa Depan</h3></div></div><p>Modul yang mengajak peserta didik menelaah perkembangan Informatika serta peluang, tantangan, dan dampak teknologi.</p><div class="resource-actions"><a class="button primary" href="assets/Modul%204%20Informatika%20Sekarang%20%26%20Masa%20Depan_Nofu%20Afi%20Surya%20Ekatama.docx" download>Unduh modul ↗</a></div></article>
         </div>
-      </article>
-      <article class="detail-card">
-        <div class="detail-index">02</div>
-        <div><h2>Bahan Ajar dan LKPD</h2>
-        <p>Tambahkan bahan presentasi, materi, LKPD, panduan aktivitas, atau tautan ke dokumen pembelajaran.</p>
+      </div>
+      <div class="resource-group">
+        <div class="resource-heading"><h2>Media Presentasi (PPT)</h2><p>Bahan tayang pembelajaran</p></div>
+        <div class="resource-grid">
+          <article class="resource-card"><div class="resource-top"><span class="resource-icon gold">PPTX</span><div><p class="resource-kind">Sistem Komputer · Kelas XII</p><h3>Simulasi Arduino Lampu Lalu Lintas</h3></div></div><p>Presentasi pendukung materi sistem komputer dan simulasi lampu lalu lintas menggunakan Arduino Uno.</p><div class="resource-actions"><a class="button primary" href="assets/Presentasi_Sistem_Komputer_Arduino_Lampu_Lalu_Lintas_XII.pptx" download>Unduh PPT ↗</a></div></article>
+          <article class="resource-card"><div class="resource-top"><span class="resource-icon gold">PPTX</span><div><p class="resource-kind">Arduino · Kelas XII</p><h3>Running Text LED Matrix</h3></div></div><p>Bahan presentasi tentang pengembangan running text menggunakan LED Matrix dan Arduino Uno.</p><div class="resource-actions"><a class="button primary" href="assets/Presentasi_Running_Text_LED_Matrix_Arduino_Uno_XII2.pptx" download>Unduh PPT ↗</a></div></article>
+          <article class="resource-card"><div class="resource-top"><span class="resource-icon gold">PPTX</span><div><p class="resource-kind">Berpikir Komputasional · Kelas XII</p><h3>Berpikir Komputasional</h3></div></div><p>Media presentasi untuk membahas komponen berpikir komputasional dan penerapannya dalam pemecahan masalah.</p><div class="resource-actions"><a class="button primary" href="assets/Presentasi_Berpikir_Komputasional_Kelas_XII.pptx" download>Unduh PPT ↗</a></div></article>
+          <article class="resource-card"><div class="resource-top"><span class="resource-icon gold">PPTX</span><div><p class="resource-kind">Wawasan Informatika · Kelas XII</p><h3>Informatika Sekarang dan Masa Depan</h3></div></div><p>Bahan tayang untuk diskusi tentang perkembangan Informatika, pemanfaatan teknologi, serta dampaknya bagi kehidupan.</p><div class="resource-actions"><a class="button primary" href="assets/Presentasi_Informatika_Sekarang_dan_Masa_Depan_XII%202.pptx" download>Unduh PPT ↗</a></div></article>
         </div>
-      </article>
-      <article class="detail-card">
-        <div class="detail-index">03</div>
-        <div><h2>Media dan Instrumen Asesmen</h2>
-        <p>Tambahkan media pembelajaran, rubrik, kisi-kisi, soal, instrumen diagnostik, formatif, dan sumatif.</p>
-        </div>
-      </article>  <div class="page-navigation"><a class="button outline-light" href="profil.html">← Sebelumnya: Profil Guru</a><a class="button primary" href="lk3.html">Selanjutnya: LK-3 →</a></div>
+      </div>
+      <div class="resource-note">Berkas ditautkan langsung dari folder <strong>assets</strong> pada repositori portofolio. Jika menambahkan dokumen baru, unggah berkas ke folder tersebut lalu tambahkan kartu dan tautan yang sesuai pada halaman ini.</div>
+      <div class="page-navigation"><a class="button outline-light" href="profil.html">← Sebelumnya: Profil Guru</a><a class="button primary" href="lk3.html">Selanjutnya: LK-3 →</a></div>
     </div></section>
   </main>
   <footer class="site-footer"><div class="container footer-inner">
     <a class="brand footer-brand" href="index.html"><span class="brand-mark">NA</span><span class="brand-text"><strong>Nofu Afi Surya Ekatama</strong><small>E-Portfolio PPG · Informatika</small></span></a>
     <p>Dokumentasi perjalanan belajar dan pengembangan profesional calon guru.</p><a class="back-top" href="#">Kembali ke atas ↑</a>
   </div><div class="container copyright">© <span id="year">2026</span> Nofu Afi Surya Ekatama · E-Portfolio PPG Informatika.</div></footer>
-  <script src="script.js?v=20261021"></script>
+  <script src="script.js?v=20261024"></script>
 </body></html>

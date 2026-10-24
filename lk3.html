@@ -3,10 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portofolio LK-3 — E-Portfolio PPG Informatika Nofu Afi Surya Ekatama.">
+  <meta name="description" content="Analisis artefak pembelajaran LK-3 dalam E-Portfolio PPG Informatika Nofu Afi Surya Ekatama.">
   <meta name="theme-color" content="#0b2f68">
   <title>Portofolio LK-3 | E-Portfolio PPG Informatika</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .lk3-intro{max-width:820px;color:var(--muted);line-height:1.8}
+    .lk3-overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:28px 0 38px}
+    .lk3-stat{padding:19px;border:1px solid var(--line);border-radius:16px;background:var(--surface, #fff)}
+    .lk3-stat strong{display:block;color:var(--navy);font-size:1.25rem;margin-bottom:5px}
+    .lk3-stat span{color:var(--muted);font-size:.84rem;line-height:1.6}
+    .lk3-section{padding:26px;margin-bottom:18px;border:1px solid var(--line);border-radius:19px;background:var(--surface, #fff);box-shadow:0 8px 24px rgba(10,38,78,.035)}
+    .lk3-section-head{display:flex;gap:16px;align-items:flex-start;margin-bottom:15px}
+    .lk3-number{display:grid;place-items:center;flex:0 0 44px;height:44px;border-radius:13px;background:#eaf1fc;color:#174b88;font-weight:900}
+    .lk3-section h2{margin:0 0 7px;font-size:1.22rem;color:var(--heading-color, #17365f);line-height:1.45}
+    .lk3-section p{color:var(--text-muted, var(--muted));line-height:1.8;margin:10px 0}
+    .lk3-section ul{padding-left:21px;color:var(--text-muted, var(--muted));line-height:1.8}
+    .lk3-evidence{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+    .lk3-evidence a{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#f7f9fc;color:#174b88;text-decoration:none;font-size:.83rem;font-weight:750}
+    .lk3-evidence a:hover{border-color:#174b88}
+    .lk3-callout{padding:18px 20px;margin:22px 0 30px;border-left:4px solid var(--gold);border-radius:0 13px 13px 0;background:#fff8e6;color:#66542b;line-height:1.75}
+    .lk3-reflection{padding:24px;border-radius:17px;background:#0b2f68;color:#fff;margin-top:28px}
+    .lk3-reflection h2{margin:0 0 10px;color:#fff;font-size:1.3rem}
+    .lk3-reflection p{margin:0;color:#e5edf8;line-height:1.85}
+    html[data-theme="dark"] .lk3-stat,html[data-theme="dark"] .lk3-section{background:var(--surface);border-color:var(--border-color)}
+    html[data-theme="dark"] .lk3-stat strong{color:var(--heading-color)}
+    html[data-theme="dark"] .lk3-evidence a{background:#17253b;color:#d7e7ff;border-color:#3a4c66}
+    html[data-theme="dark"] .lk3-callout{background:#292416;border-color:#a98535;color:#ead9a6}
+    @media(max-width:680px){.lk3-overview{grid-template-columns:1fr}.lk3-section{padding:20px}.lk3-section-head{gap:12px}.lk3-number{flex-basis:38px;height:38px}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#konten">Lewati ke konten</a>
@@ -16,27 +41,74 @@
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
     <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
-        <a href="index.html">Beranda</a>
-        <a href="profil.html">Profil Guru</a>
-        <a href="perangkat-ajar.html">Perangkat Ajar</a>
-        <a class="active" href="lk3.html">LK-3</a>
-        <a href="uts-siklus-1.html">UTS – Siklus 1</a>
-        <a href="uas-siklus-2-4.html">UAS – Siklus 2–4</a>
-        <a href="lampiran.html">Lampiran</a>
+      <a href="index.html">Beranda</a><a href="profil.html">Profil Guru</a><a href="perangkat-ajar.html">Perangkat Ajar</a><a class="active" href="lk3.html">LK-3</a><a href="uts-siklus-1.html">UTS – Siklus 1</a><a href="uas-siklus-2-4.html">UAS – Siklus 2–4</a><a href="lampiran.html">Lampiran</a>
     </nav>
   </div></header>
   <main id="konten">
     <section class="detail-hero"><div class="container">
-      <p class="section-label">ANALISIS ARTEFAK PEMBELAJARAN</p><h1>Portofolio LK-3</h1><p>Dokumentasi analisis produk rancangan dan pelaksanaan pembelajaran untuk praktik mengajar mandiri.</p>
+      <p class="section-label">ANALISIS ARTEFAK PEMBELAJARAN</p>
+      <h1>Lembar Kerja 3 (LK-3)</h1>
+      <p class="lk3-intro">Analisis produk perencanaan dan pelaksanaan pembelajaran Informatika di kelas XII/Fase F, SMA Negeri Colomadu. Halaman ini menghubungkan perangkat ajar dengan pertimbangan pedagogis, pengalaman praktik, asesmen, dan rencana perbaikan.</p>
     </div></section>
-    <section class="section detail-section"><div class="container detail-list">
-      <article class="detail-card"><div class="detail-index">01</div><div><h2>Analisis Produk Rancangan/Perencanaan Pembelajaran</h2><p>Analisis produk rancangan atau perencanaan pembelajaran yang digunakan dalam praktik mengajar mandiri. Uraikan keselarasan tujuan, langkah pembelajaran, strategi, diferensiasi, dan asesmen.</p></div></article>
-      <article class="detail-card"><div class="detail-index">02</div><div><h2>Analisis Materi Pembelajaran</h2><p>Analisis materi yang telah disusun dan diterapkan pada praktik mengajar mandiri, meliputi ketepatan konsep, urutan penyajian, relevansi dengan tujuan, keterbacaan, dan kebutuhan peserta didik.</p></div></article>
-      <article class="detail-card"><div class="detail-index">03</div><div><h2>Analisis Media Pembelajaran</h2><p>Jelaskan media yang digunakan, alasan pemilihan, kesesuaian dengan tujuan dan karakteristik peserta didik, kemudahan penggunaan, serta kelebihan dan hal yang perlu diperbaiki.</p></div></article>
-      <article class="detail-card"><div class="detail-index">04</div><div><h2>Analisis Video Praktik Mengajar Mandiri</h2><p>Tautkan video pelaksanaan dan analisis pembukaan, penyampaian materi, interaksi, pengelolaan kelas, pemanfaatan media, asesmen, serta aspek yang perlu ditingkatkan. Cantumkan penanda waktu jika relevan.</p></div></article>
-      <article class="detail-card"><div class="detail-index">05</div><div><h2>Analisis Kegiatan Nonmengajar</h2><p>Dokumentasikan kegiatan nonmengajar yang dilakukan, tujuan, peran, pelaksanaan, hasil atau bukti yang tersedia, dan pembelajaran yang diperoleh.</p></div></article>
-      <article class="detail-card"><div class="detail-index">06</div><div><h2>Instrumen Penilaian dan Analisisnya</h2><p>Tambahkan instrumen penilaian yang dirancang, seperti kisi-kisi, soal, rubrik, lembar observasi, atau asesmen formatif. Analisis keselarasan dengan tujuan, kejelasan kriteria, hasil yang diperoleh, dan tindak lanjut.</p></div></article>
-      <p class="content-note"><strong>Catatan:</strong> Lengkapi bagian ini dengan artefak asli dan dokumentasi yang telah diverifikasi. Tautan dokumen dapat ditambahkan pada isi setiap bagian.</p>
+    <section class="section detail-section"><div class="container">
+      <div class="lk3-overview">
+        <div class="lk3-stat"><strong>01–03</strong><span>Perencanaan, materi, dan media pembelajaran</span></div>
+        <div class="lk3-stat"><strong>04–05</strong><span>Praktik mengajar dan kegiatan nonmengajar</span></div>
+        <div class="lk3-stat"><strong>06</strong><span>Instrumen penilaian, hasil, dan tindak lanjut</span></div>
+      </div>
+
+      <article class="lk3-section">
+        <div class="lk3-section-head"><span class="lk3-number">01</span><div><h2>Analisis Produk Rancangan/Perencanaan Pembelajaran</h2><p>Fokus: keterkaitan tujuan, aktivitas, pendekatan, dan asesmen.</p></div></div>
+        <p>Perangkat ajar Informatika kelas XII disusun dengan menghubungkan konsep dengan pengalaman pemecahan masalah. Pada materi Sistem Komputer dan simulasi Arduino, peserta didik tidak hanya mempelajari komponen, tetapi juga merancang rangkaian, membaca kode, menguji keluaran, dan memperbaiki kesalahan. Pada materi Berpikir Komputasional (CT), pembelajaran diarahkan pada penggunaan dekomposisi, pengenalan pola, abstraksi, dan algoritma untuk menjelaskan strategi penyelesaian masalah.</p>
+        <p>Rancangan yang memadukan penjelasan singkat, demonstrasi, praktik, diskusi, dan refleksi memberi peluang bagi peserta didik dengan kesiapan berbeda untuk terlibat. Penggunaan proyek atau tantangan juga dapat memperkuat keterhubungan antara tujuan dan aktivitas. Hal yang perlu dijaga ialah instruksi bertahap, alokasi waktu yang realistis, kriteria keberhasilan yang disampaikan sejak awal, serta dukungan bagi peserta didik yang mengalami kesulitan.</p>
+        <p><strong>Rencana perbaikan:</strong> memecah tugas kompleks menjadi tahapan kecil, menyertakan contoh hasil yang diharapkan, menyediakan pemeriksaan pemahaman di tengah kegiatan, dan menggunakan hasil asesmen formatif untuk menentukan pendampingan.</p>
+        <div class="lk3-evidence"><a href="perangkat-ajar.html">↗ Lihat seluruh perangkat ajar</a><a href="assets/Modul%201%20Ajar%20Arduino_Nofu%20Afi%20Surya%20Ekatama.docx" target="_blank" rel="noopener">↗ Modul 1: Arduino</a><a href="assets/Modul%203%20Berpikir%20Komputasional_Nofu%20Afi%20Surya%20Ekatama.docx" target="_blank" rel="noopener">↗ Modul 3: CT</a></div>
+      </article>
+
+      <article class="lk3-section">
+        <div class="lk3-section-head"><span class="lk3-number">02</span><div><h2>Analisis Materi Pembelajaran</h2><p>Fokus: ketepatan konsep, urutan materi, dan keterkaitan dengan konteks peserta didik.</p></div></div>
+        <p>Materi yang tersedia mencakup Sistem Komputer dan simulasi Arduino, Running Text LED Matrix, Berpikir Komputasional, serta Informatika Sekarang dan Masa Depan. Cakupan ini memberi variasi pengalaman belajar: memahami sistem dan komponen, menerapkan logika melalui program, menggunakan CT untuk menyelesaikan masalah, serta menimbang perkembangan dan dampak teknologi.</p>
+        <p>Materi praktik Arduino berpotensi membantu konsep yang abstrak menjadi terlihat melalui hubungan kode, rangkaian, dan keluaran simulasi. Materi CT dapat mengembangkan cara berpikir terstruktur ketika peserta didik diminta menjelaskan alasan di balik strategi, bukan sekadar menyebut empat komponennya. Sementara itu, materi perkembangan Informatika dapat memperluas diskusi ke konteks kehidupan sehari-hari dan tanggung jawab penggunaan teknologi.</p>
+        <p>Materi perlu disajikan dari konsep inti menuju penerapan, disertai istilah yang jelas, contoh dan noncontoh, serta pertanyaan pemantik. Pada topik pemrograman, contoh kode sebaiknya diikuti kesempatan memprediksi hasil, menguji, dan menjelaskan kesalahan agar pembelajaran tidak berhenti pada menyalin kode.</p>
+        <div class="lk3-evidence"><a href="assets/Modul%201%20Ajar%20Arduino_Nofu%20Afi%20Surya%20Ekatama.docx" target="_blank" rel="noopener">↗ Modul 1 · Sistem Komputer/Arduino</a><a href="assets/Modul%202%20Ajar%20Arduino_Nofu%20Afi%20Surya%20Ekatama.docx" target="_blank" rel="noopener">↗ Modul 2 · Arduino</a><a href="assets/Modul%203%20Berpikir%20Komputasional_Nofu%20Afi%20Surya%20Ekatama.docx" target="_blank" rel="noopener">↗ Modul 3 · Berpikir Komputasional</a><a href="assets/Modul%204%20Informatika%20Sekarang%20%26%20Masa%20Depan_Nofu%20Afi%20Surya%20Ekatama.docx" target="_blank" rel="noopener">↗ Modul 4 · Informatika Masa Depan</a></div>
+      </article>
+
+      <article class="lk3-section">
+        <div class="lk3-section-head"><span class="lk3-number">03</span><div><h2>Analisis Media Pembelajaran</h2><p>Fokus: fungsi media dalam membantu pemahaman dan partisipasi.</p></div></div>
+        <p>Media yang telah disiapkan meliputi presentasi pembelajaran dan simulasi Arduino menggunakan Wokwi. Presentasi membantu menata alur penjelasan dan memberi contoh visual; Wokwi memungkinkan peserta didik menguji rangkaian dan program secara virtual. Untuk CT, media kartu atau tantangan unplugged dapat menjadi alternatif agar peserta didik berdiskusi dan menyampaikan strategi tanpa bergantung pada perangkat digital.</p>
+        <p>Kelebihan pendekatan ini adalah tersedianya lebih dari satu cara untuk mengakses konsep: penjelasan visual, praktik simulasi, dan interaksi antarteman. Namun, media hanya efektif jika peserta didik aktif menggunakannya. Presentasi yang terlalu dominan dapat membuat kegiatan pasif, sedangkan simulasi dapat menimbulkan kebingungan jika instruksi rangkaian, pin, atau kode belum cukup jelas.</p>
+        <p><strong>Rencana perbaikan:</strong> gunakan presentasi secara selektif, berikan tugas kecil yang harus diselesaikan saat simulasi, sertakan langkah pemeriksaan rangkaian dan debugging, serta gunakan pertanyaan atau kartu tantangan untuk memastikan setiap anggota kelompok berkontribusi. Media kartu dicantumkan sebagai inovasi/opsi pembelajaran dan perlu disertai bukti pelaksanaan apabila sudah diterapkan.</p>
+        <div class="lk3-evidence"><a href="assets/Presentasi_Sistem_Komputer_Arduino_Lampu_Lalu_Lintas_XII.pptx" target="_blank" rel="noopener">↗ PPT Arduino Lampu Lalu Lintas</a><a href="assets/Presentasi_Running_Text_LED_Matrix_Arduino_Uno_XII2.pptx" target="_blank" rel="noopener">↗ PPT Running Text LED Matrix</a><a href="assets/Presentasi_Berpikir_Komputasional_Kelas_XII.pptx" target="_blank" rel="noopener">↗ PPT Berpikir Komputasional</a><a href="assets/Presentasi_Informatika_Sekarang_dan_Masa_Depan_XII%202.pptx" target="_blank" rel="noopener">↗ PPT Informatika Sekarang dan Masa Depan</a></div>
+      </article>
+
+      <article class="lk3-section">
+        <div class="lk3-section-head"><span class="lk3-number">04</span><div><h2>Analisis Video Praktik Mengajar Mandiri</h2><p>Fokus: pelaksanaan pembelajaran dan respons peserta didik.</p></div></div>
+        <p>Analisis praktik mengajar perlu melihat kesesuaian antara rencana dan pelaksanaan, kejelasan instruksi, pengelolaan waktu, interaksi guru–peserta didik, pemerataan partisipasi, pemanfaatan media, dan cara guru menanggapi kesulitan. Dalam pembelajaran Informatika, bagian penting yang dapat diamati ialah bagaimana guru memberi ruang untuk mencoba, membaca hasil, melakukan debugging, dan menjelaskan alasan pemilihan solusi.</p>
+        <p>Pengalaman observasi pembelajaran menunjukkan bahwa keterlibatan peserta didik dapat beragam: sebagian menunjukkan antusiasme, sementara sebagian lainnya memerlukan pemantik dan arahan yang lebih terstruktur. Karena itu, video praktik sebaiknya dianalisis dengan bukti yang spesifik, misalnya contoh pertanyaan peserta didik, respons terhadap instruksi, atau momen ketika guru memberi bantuan. Penilaian ini perlu disesuaikan kembali setelah video praktik mandiri ditinjau.</p>
+        <p><strong>Rencana perbaikan:</strong> membagi penjelasan menjadi segmen pendek, menyisipkan pertanyaan cek pemahaman, memberikan waktu praktik yang cukup, dan memastikan diskusi kelompok melibatkan semua peserta didik.</p>
+        <div class="lk3-callout"><strong>Dokumentasi video:</strong> tautan video praktik mengajar mandiri belum dimasukkan pada halaman ini. Tambahkan tautan video atau dokumentasi asli setelah tersedia, lalu lengkapi analisis dengan penanda waktu dan kejadian yang benar-benar terlihat pada video.</div>
+      </article>
+
+      <article class="lk3-section">
+        <div class="lk3-section-head"><span class="lk3-number">05</span><div><h2>Analisis Kegiatan Nonmengajar</h2><p>Fokus: kontribusi pada lingkungan sekolah dan pembelajaran profesional.</p></div></div>
+        <p>Kegiatan nonmengajar selama PPL dapat dianalisis berdasarkan keterlibatan dalam koordinasi dengan guru pamong, persiapan perangkat, komunikasi terkait kegiatan sekolah, dan dukungan terhadap proses pembelajaran. Kegiatan tersebut membantu calon guru memahami bahwa tugas profesional tidak hanya berlangsung saat mengajar di kelas, tetapi juga melibatkan komunikasi, tanggung jawab, kedisiplinan, dan kerja sama dengan warga sekolah.</p>
+        <p>Analisis akhir harus menyebutkan kegiatan yang benar-benar dilakukan, waktu atau konteksnya, peran pribadi, hasil, dan bukti pendukung. Hindari mencantumkan kegiatan yang belum dilakukan atau tidak memiliki bukti yang dapat dipertanggungjawabkan.</p>
+        <p><strong>Rencana pelengkapan:</strong> pilih dua atau tiga kegiatan yang paling representatif, lalu sertakan foto, agenda, produk kerja, atau catatan kegiatan yang diizinkan untuk dipublikasikan. Jika tidak ada dokumentasi foto, uraian reflektif yang akurat dapat digunakan sebagai pendukung.</p>
+      </article>
+
+      <article class="lk3-section">
+        <div class="lk3-section-head"><span class="lk3-number">06</span><div><h2>Instrumen Penilaian dan Analisisnya</h2><p>Fokus: keselarasan asesmen dengan tujuan serta tindak lanjut pembelajaran.</p></div></div>
+        <p>Untuk pembelajaran Informatika, bukti belajar idealnya tidak hanya berasal dari jawaban tertulis. Pemahaman konsep dapat diperiksa melalui pertanyaan atau kuis; keterampilan praktik dapat diamati melalui proses merancang rangkaian, menjalankan kode, menguji keluaran, dan memperbaiki kesalahan; sedangkan kemampuan CT dapat dilihat dari cara peserta didik menguraikan masalah, mengenali pola, melakukan abstraksi, menyusun algoritma, dan menjelaskan strategi.</p>
+        <p>Rubrik praktik atau proyek sebaiknya memuat kriteria yang dapat diamati, misalnya ketepatan konsep, fungsi solusi, proses pengujian dan debugging, penjelasan alasan, serta kolaborasi. Instruksi dan bobot penilaian perlu disampaikan sebelum tugas dimulai. Hasil penilaian kemudian digunakan untuk menentukan tindak lanjut, bukan hanya menghasilkan nilai akhir.</p>
+        <p><strong>Analisis awal:</strong> kombinasi penilaian pengetahuan, praktik, proses pemecahan masalah, dan komunikasi dapat memberi gambaran kemampuan yang lebih utuh. Untuk memastikan validitasnya, instrumen harus diperiksa kembali terhadap tujuan pembelajaran dan bukti pekerjaan siswa. Rekap nilai, hasil kuis, serta kesimpulan kuantitatif belum ditampilkan karena data hasil penilaian belum tersedia pada berkas yang terhubung di halaman ini.</p>
+        <p><strong>Rencana perbaikan:</strong> gunakan rubrik sederhana sebelum praktik, catat kesalahan yang sering muncul, berikan umpan balik spesifik, dan sediakan kesempatan memperbaiki program atau jawaban setelah menerima masukan.</p>
+        <div class="lk3-callout"><strong>Bukti asesmen yang perlu ditautkan:</strong> soal/kuis, LKPD atau tugas, rubrik praktik/proyek, lembar observasi, serta rekap hasil belajar yang identitas peserta didiknya telah disamarkan. Hindari menampilkan nilai atau klaim peningkatan tanpa data yang terverifikasi.</div>
+      </article>
+
+      <section class="lk3-reflection">
+        <h2>Refleksi dan tindak lanjut</h2>
+        <p>Analisis awal ini menegaskan bahwa pembelajaran Informatika perlu memberi keseimbangan antara penjelasan konsep, kesempatan mencoba, interaksi, dan asesmen. Langkah perbaikan yang diprioritaskan adalah memperjelas instruksi, membagi tugas menjadi tahapan yang terjangkau, memeratakan partisipasi, serta menggunakan bukti proses dan hasil belajar untuk menentukan pendampingan. Setelah video, dokumentasi kegiatan, dan instrumen penilaian dilengkapi, analisis perlu diperbarui agar seluruh kesimpulan benar-benar mencerminkan praktik yang berlangsung.</p>
+      </section>
       <div class="page-navigation"><a class="button outline-light" href="perangkat-ajar.html">← Sebelumnya: Perangkat Ajar</a><a class="button primary" href="uts-siklus-1.html">Selanjutnya: UTS – Siklus 1 →</a></div>
     </div></section>
   </main>
@@ -44,5 +116,5 @@
     <a class="brand footer-brand" href="index.html"><span class="brand-mark">NA</span><span class="brand-text"><strong>Nofu Afi Surya Ekatama</strong><small>E-Portfolio PPG · Informatika</small></span></a>
     <p>Dokumentasi perjalanan belajar dan pengembangan profesional calon guru.</p><a class="back-top" href="#">Kembali ke atas ↑</a>
   </div><div class="container copyright">© <span id="year">2026</span> Nofu Afi Surya Ekatama · E-Portfolio PPG Informatika.</div></footer>
-  <script src="script.js?v=20261021"></script>
+  <script src="script.js?v=20261024"></script>
 </body></html>
